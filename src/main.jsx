@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { MemoHook } from './06-memo/MemoHook'
+import { CallbackHook } from './06-memo/CallbackHook'
+// import { MemoHook } from './06-memo/MemoHook'
 // import { Memorize } from './06-memo/Memorize'
 // import { FocusScreen } from './04-useRef/FocusScreen'
 // import { MultipleCustomHook } from './03-examples/MultipleCustomHook'
@@ -14,6 +15,6 @@ import { MemoHook } from './06-memo/MemoHook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    <MemoHook/>
+    <CallbackHook/>
   // </React.StrictMode>,
 )
