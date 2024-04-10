@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { CallbackHook } from './06-memo/CallbackHook'
+import { Padre } from './07-tareamemo/07-tarea-memo/Padre'
+// import { CallbackHook } from './06-memo/CallbackHook'
 // import { MemoHook } from './06-memo/MemoHook'
 // import { Memorize } from './06-memo/Memorize'
 // import { FocusScreen } from './04-useRef/FocusScreen'
@@ -15,6 +16,6 @@ import { CallbackHook } from './06-memo/CallbackHook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    <CallbackHook/>
+    <Padre/>
   // </React.StrictMode>,
 )
