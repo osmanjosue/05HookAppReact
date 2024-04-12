@@ -8,7 +8,7 @@ const initialState = [
   //   id: new Date().getTime(),
   //   description: "Recolectar la piedra del alma",
   //   done: false,
-  // },  
+  // },
 ];
 
 const init = () => {
@@ -31,6 +31,13 @@ export const TodoApp = () => {
     dispatch(action);
   };
 
+  const handleDeleteTodo = (id) => {
+    dispatch({
+      type: "[TODO] Remove Todo",
+      payload: id,
+    });
+  };
+
   return (
     <>
       <h1>
@@ -40,7 +47,7 @@ export const TodoApp = () => {
       <div className="row">
         <div className="col-7">
           {/* TodoList */}
-          <TodoList todosReceived={todos} />
+          <TodoList todosReceived={todos} onDeleteTodo={handleDeleteTodo} />
           {/* fin de TodoList */}
         </div>
         <div className="col-5">
