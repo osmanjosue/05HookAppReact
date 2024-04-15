@@ -1,3 +1,4 @@
+import { Navbar } from './Navbar';
 import { HomePage, AboutPage, LoginPage } from './index';
 import { Navigate, Route, Routes } from 'react-router-dom';
 /* 
@@ -9,7 +10,9 @@ export const MainApp = () => {
   return (
     <>
       <h1>MainApp</h1>
+      <Navbar/>
       <hr />
+
       <Routes>
         <Route
           path="/"
