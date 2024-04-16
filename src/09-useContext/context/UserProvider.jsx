@@ -1,14 +1,14 @@
 import { Usercontext } from './UserContext';
 
-const user = {
+/* const user = {
   id: 123,
   name: 'Fernando Herrera',
   email: 'fernando@gmail.com',
-};
+}; */
 
 export const UserProvider = ({ children }) => {
   return (
-    <Usercontext.Provider value={{ hola: 'Mundo', user: user }}>
+    <Usercontext.Provider value={{}}>
       {children}
     </Usercontext.Provider>
   );
