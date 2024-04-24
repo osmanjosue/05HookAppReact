@@ -5,7 +5,9 @@ export const TodoItem = ({ todoReceived = [], onDeleteTodo, onToggleTodo }) => {
         className={`align-self-center ${
           (todoReceived.done)?'text-decoration-line-through':''
         }`}
-        onClick={() => onToggleTodo(todoReceived.id)}>
+        onClick={() => onToggleTodo(todoReceived.id)}
+        aria-label="span"
+        >
         {todoReceived.description}
       </span>
       <button
