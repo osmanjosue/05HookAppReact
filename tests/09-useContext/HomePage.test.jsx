@@ -1,6 +1,6 @@
-const { render, screen } = require('@testing-library/react');
-const { HomePage } = require('../../src/09-useContext/HomePage');
-const { Usercontext } = require('../../src/09-useContext/context/UserContext');
+import { render, screen } from '@testing-library/react';
+import { HomePage } from '../../src/09-useContext/HomePage';
+import { Usercontext } from '../../src/09-useContext/context/UserContext';
 
 describe('Pruebas en <HomePage />', () => {
   const user = {
